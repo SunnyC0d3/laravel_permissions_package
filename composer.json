@@ -1,0 +1,33 @@
+{
+    "name": "lnpg/roles-and-permissions",
+    "type": "package",
+    "description": "This demo package plays around with creating custom Laravel packages.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sukh Singh",
+            "email": "sunny.singh@lnpg.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LNPG\\RolesAndPermissions\\": "src/",
+            "LNPG\\RolesAndPermissions\\Classes\\": "src/Classes/",
+            "LNPG\\RolesAndPermissions\\Classes\\HasClasses\\": "src/Classes/HasClasses/",
+            "LNPG\\RolesAndPermissions\\Classes\\GrantClasses\\": "src/Classes/GrantClasses/",
+            "LNPG\\RolesAndPermissions\\Middleware\\": "src/Middlewares/",
+            "LNPG\\RolesAndPermissions\\Models\\": "src/Models/",
+            "LNPG\\RolesAndPermissions\\Interfaces\\": "src/Interfaces/",
+            "LNPG\\RolesAndPermissions\\Database\\Factories\\": "src/Factories/",
+            "LNPG\\RolesAndPermissions\\Exceptions\\": "src/Exceptions/",
+            "LNPG\\RolesAndPermissions\\Traits\\": "src/Traits/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LNPG\\RolesAndPermissions\\RolesAndPermissionsProvider"
+            ]
+        }
+    }
+}
